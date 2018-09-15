@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <link rel="stylesheet" href="assets/vendors/owlCarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/vendors/owlCarousel/owl.theme.default.min.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+			<div id="dismiss" class="hidden-lg">
+	            <i class="fa fa-fw fa-arrow-left"></i>
+	        </div>
+
+            <div class="sidebar-header">
+                <h3>HackCodeX</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+                </li>
+				<li>
+                    <a href="#"><i class="fa fa-fw fa-user-circle"></i> Profile</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-users"></i> Team</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-edit"></i> Submission</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-phone"></i> Contact</a>
+                </li>
+            </ul>
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="#" class="download">Made with <i class="fa fa-fw fa-heart"></i></a>
+                </li>
+                <li>
+                    <a href="https://monkfromearth.github.io" class="article">monkfromearth</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <ul id="page-nav">
+				<li id="nav-toggle-btn" class="hidden-lg">
+					<a href="#"><i class="fa fa-fw fa-bars"></i></a>
+				</li>
+				<li class="active">
+					<a href="#" id="nav-overview" data-target='#page-overview'>
+						<i class="fa fa-fw fa-home"></i><span class="hidden-sm hidden-xs"> Overview</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" id="nav-schedule" data-target='#page-schedule'>
+						<i class="fa fa-fw fa-money"></i><span class="hidden-sm hidden-xs"> Schedule</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" id="nav-themes" data-target='#page-themes'>
+						<i class="fa fa-fw fa-newspaper-o"></i><span class="hidden-sm hidden-xs"> Themes</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" id="nav-rules" data-target='#page-rules'>
+						<i class="fa fa-fw fa-paper-plane"></i><span class="hidden-sm hidden-xs"> Rules</span>
+					</a>
+				</li>
+			</ul>
+			
+			<br/>
+            
+            <div id="page-overview" class="page-tab page-active">
+            	<h2 class="text-center">Overview</h2>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div id="page-schedule" class="hidden-md hidden-lg hidden-sm hidden-xs page-tab">
+            	<h2 class="text-center">Schedule</h2>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div id="page-themes" class="hidden-md hidden-lg hidden-sm hidden-xs page-tab">
+            	<br/>
+				<!-- galery owl -->
+				<div id="galery-owl" class="owl-carousel owl-theme">
+					<!-- galery item -->
+					<div class="galery-item">
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<h3 class="text-center">Environment</h3>
+								<div class="row">
+									<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+										<img class="img img-thumbnail" src="assets/images/waste.jpg" alt="">
+									</div>
+									<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore debitis sint quos voluptatem cumque, nobis similique molestias alias iure voluptates quasi, iste illo odit necessitatibus accusamus quidem asperiores aliquam, ducimus, autem hic laboriosam quod non cum veritatis. Aliquid quae enim numquam error laboriosam? Fugiat quidem, distinctio modi saepe iusto, veritatis expedita rem adipisci dolores quo consectetur minus placeat magni labore in nihil dignissimos neque!</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /galery item -->
+
+					<!-- galery item -->
+					<div class="galery-item">
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<h3 class="text-center">Digital Payments and Solutions</h3>
+								<div class="row">
+									<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+										<img class="img img-thumbnail" src="assets/images/digital_payments.jpg" alt="">
+									</div>
+									<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore debitis sint quos voluptatem cumque, nobis similique molestias alias iure voluptates quasi, iste illo odit necessitatibus accusamus quidem asperiores aliquam, ducimus, autem hic laboriosam quod non cum veritatis. Aliquid quae enim numquam error laboriosam? Fugiat quidem, distinctio modi saepe iusto, veritatis expedita rem adipisci dolores quo consectetur minus placeat magni labore in nihil dignissimos neque!</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /galery item -->
+
+					<!-- galery item -->
+					<div class="galery-item">
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<h3 class="text-center">Women Safety and Security</h3>
+								<div class="row">
+									<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+										<img class="img img-thumbnail" src="assets/images/women.jpg" alt="">
+									</div>
+									<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore debitis sint quos voluptatem cumque, nobis similique molestias alias iure voluptates quasi, iste illo odit necessitatibus accusamus quidem asperiores aliquam, ducimus, autem hic laboriosam quod non cum veritatis. Aliquid quae enim numquam error laboriosam? Fugiat quidem, distinctio modi saepe iusto, veritatis expedita rem adipisci dolores quo consectetur minus placeat magni labore in nihil dignissimos neque!</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /galery item -->
+
+					<!-- galery item -->
+					<div class="galery-item">
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<h3 class="text-center">Transportation and Mobility</h3>
+								<div class="row">
+									<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+										<img class="img img-thumbnail" src="assets/images/mobility.jpg" alt="">
+									</div>
+									<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore debitis sint quos voluptatem cumque, nobis similique molestias alias iure voluptates quasi, iste illo odit necessitatibus accusamus quidem asperiores aliquam, ducimus, autem hic laboriosam quod non cum veritatis. Aliquid quae enim numquam error laboriosam? Fugiat quidem, distinctio modi saepe iusto, veritatis expedita rem adipisci dolores quo consectetur minus placeat magni labore in nihil dignissimos neque!</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /galery item -->
+
+					<!-- galery item -->
+					<div class="galery-item">
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<div class="row">
+									<h3 class="text-center">Rural Development</h3>
+									<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+										<img class="img img-thumbnail" src="assets/images/rural.jpg" alt="">
+									</div>
+									<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore debitis sint quos voluptatem cumque, nobis similique molestias alias iure voluptates quasi, iste illo odit necessitatibus accusamus quidem asperiores aliquam, ducimus, autem hic laboriosam quod non cum veritatis. Aliquid quae enim numquam error laboriosam? Fugiat quidem, distinctio modi saepe iusto, veritatis expedita rem adipisci dolores quo consectetur minus placeat magni labore in nihil dignissimos neque!</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /galery item -->
+
+					<!-- galery item -->
+					<div class="galery-item">
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<div class="row">
+									<h3 class="text-center">Education</h3>
+									<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+										<img class="img img-thumbnail" src="assets/images/education.jpg" alt="">
+									</div>
+									<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore debitis sint quos voluptatem cumque, nobis similique molestias alias iure voluptates quasi, iste illo odit necessitatibus accusamus quidem asperiores aliquam, ducimus, autem hic laboriosam quod non cum veritatis. Aliquid quae enim numquam error laboriosam? Fugiat quidem, distinctio modi saepe iusto, veritatis expedita rem adipisci dolores quo consectetur minus placeat magni labore in nihil dignissimos neque!</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /galery item -->
+
+				</div>
+				<!-- /galery owl -->
+            </div>
+            <div id="page-rules" class="hidden-md hidden-lg hidden-sm hidden-xs page-tab">
+            	<h2 class="text-center">Rules</h2>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+    </div>
+    <div class="overlay"></div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+	<!-- Dashboard -->
+	<script src="assets/vendors/owlCarousel/owl.carousel.min.js"></script>
+	<script src="assets/js/dashboard.js"></script>
+
+</body>
+</html>
