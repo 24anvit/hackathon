@@ -46,4 +46,14 @@
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
+li.disabled {
+    opacity:0.2;
+    pointer-events:none;
+}
+.alert * {
+    color:#FFF;
+}
+.form-group .row > div {
+    padding-bottom:0.5em;
+}
 /* Page nav bar tabs ends*/

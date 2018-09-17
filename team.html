@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="assets/css/base.dashboard.css">
+    <link rel="stylesheet" href="assets/css/team.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <link rel="stylesheet" href="assets/vendors/owlCarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/vendors/owlCarousel/owl.theme.default.min.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+			<div id="dismiss" class="hidden-lg">
+	            <i class="fa fa-fw fa-arrow-left"></i>
+	        </div>
+
+            <div class="sidebar-header">
+                <h3>HackCodeX</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="dashboard.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                </li>
+				<li>
+                    <a href="#"><i class="fa fa-fw fa-user-circle"></i> Profile</a>
+                </li>
+                <li class="active">
+                    <a href="team.html"><i class="fa fa-fw fa-users"></i> Team</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-edit"></i> Submission</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-phone"></i> Contact</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-bell"></i> Notifications</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-sign-out"></i> Log out</a>
+                </li>
+            </ul>
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="#" class="download">Made with <i class="fa fa-fw fa-heart"></i><br/>by Team Pro Club</a>
+                </li>
+                <li>
+                    <a href="https://monkfromearth.github.io" class="article">monkfromearth</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <ul id="page-nav">
+				<li id="nav-toggle-btn" class="hidden-lg">
+					<a href="#"><i class="fa fa-fw fa-bars"></i></a>
+				</li>
+				<li class="active">
+					<a href="#" id="nav-myteam" data-target='#page-myteam'>
+						<i class="fa fa-fw fa-users"></i><span class="hidden-sm hidden-xs"> My Team</span>
+					</a>
+				</li>
+				<li class="disabled">
+					<a href="#" id="nav-build" data-target='#page-build'>
+						<i class="fa fa-fw fa-cogs"></i><span class="hidden-sm hidden-xs"> Build</span>
+					</a>
+				</li>
+				<li class="disabled">
+					<a href="#" id="nav-review" data-target='#page-review'>
+						<i class="fa fa-fw fa-newspaper-o"></i><span class="hidden-sm hidden-xs"> Review</span>
+					</a>
+				</li>
+				<li class="disabled">
+					<a href="#" id="nav-status" data-target='#page-status'>
+						<i class="fa fa-fw fa-check"></i><span class="hidden-sm hidden-xs"> Status</span>
+					</a>
+				</li>
+			</ul>
+			
+			<br/>
+            
+            <div id="page-myteam" class="page-tab page-active">
+            	<h2 class="text-center">My Team</h2>
+	            <div class="text-center">
+	            	<div class="alert alert-danger">
+	            		<p>
+	            			<b>Team Not Created!</b> Please create your team now to participate.
+	            		</p>
+	            	</div>
+	            </div>
+	            <div class="panel panel-default">
+	            	<div class="panel-body">
+	            		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, consequatur? Rerum earum consequuntur impedit maxime, dicta officia aliquid expedita quis hic repellat minima quae, fugit, ex quidem minus iste officiis dignissimos numquam, autem provident nemo inventore nam. Magnam harum illo dolore fuga aperiam, cumque laudantium molestias assumenda distinctio nesciunt sint ipsum voluptatibus doloremque voluptatem vel cum sapiente aspernatur quas nulla nobis atque sed veniam pariatur eaque? Accusamus, voluptates autem id nisi modi molestiae dolorum reprehenderit! Totam provident tempore soluta voluptatum dolorum asperiores nulla. Repellat voluptate possimus odio facilis cum aliquid blanditiis! Quae aspernatur culpa natus repudiandae. Neque ipsum, similique hic est libero maxime dolores id molestias quos laboriosam voluptates laborum porro quis modi earum, commodi sequi reprehenderit culpa dolorem doloribus iure iusto perspiciatis quisquam. Nobis itaque mollitia alias, error repellat temporibus facere nemo eaque incidunt aperiam, doloribus, harum beatae nam ad molestiae unde accusamus pariatur consequuntur. Repellendus accusantium corporis nam mollitia, nulla animi, illo iste vero laudantium quibusdam voluptatem maxime itaque, ea doloribus consequatur rem quo perspiciatis! Ut nemo, ipsam saepe, tempora consectetur minima mollitia ullam error omnis quidem neque eum cum dolor odit asperiores blanditiis. Sint molestiae, similique doloremque, veritatis eius hic, ipsum dolore excepturi ab sequi ea perspiciatis.</p>
+	            	</div>
+	            </div>
+	            <div class="text-right">
+	            	<button id="myteam-submit" class="btn btn-info"><i class="fa fa-fw fa-user-plus"></i> Create Team</button>
+	            </div>
+            </div>
+            <div id="page-build" class="hidden-md hidden-lg hidden-sm hidden-xs page-tab">
+        		<div class="row">
+        			<div class="col-lg-10 col-md-11 col-sm-12 col-xs-12 row-center">
+        				<h2 class="text-center">Build Your Team</h2>
+        				<form action="">
+		        			<div class="form-group">
+		        				<label for="team-name">Team's Name</label>
+		        				<input type="text" class="form-control" id="team-name" placeholder="Enter your team's name" name="build-team-name">
+		        			</div>
+		        			<div class="form-group">
+		        				<label for="participant-count">No. of Participants</label>
+		        				<select name="participant-count" id="build-participant-count" class="form-control">
+		        					<option value="none">-- Select No. of Participants --</option>
+		        					<option value="2">2</option>
+		        					<option value="3">3</option>
+		        					<option value="4">4</option>
+		        					<option value="5">5</option>
+		        				</select>
+		        			</div>
+		        			<div class="form-group hidden-lg hidden-md hidden-sm hidden-xs">
+		        				<label for="team-leader">Team Leader</label>
+		        				<div class="row">
+		            				<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+		            					<input type="text" class="form-control" id="team-leader-name" placeholder="Enter team leader's name" value="" name="build-team-leader-name">
+		            				</div>
+		            				<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+		            					<input type="email" class="form-control" id="team-leader-email" placeholder="Enter team leader's email" value="" name="build-team-leader-email">
+		            				</div>
+		            			</div>
+		        			</div>
+		        			<span id="build-team-members">
+		        				
+		        			</span>
+		        		</form>
+        			</div>
+        		</div>
+			</div>
+            <div id="page-review" class="hidden-md hidden-lg hidden-sm hidden-xs page-tab">
+            	<h2 class="text-center">Review Your Team</h2>
+            	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, cumque modi ad tenetur reprehenderit quaerat maiores vel. Debitis ea itaque, velit ad reprehenderit repellat laboriosam dolores qui voluptatibus officiis magnam, veniam odit consectetur quis, hic corporis. Porro culpa aspernatur explicabo, ex tempore officia soluta, ipsum eum reprehenderit eos nostrum quae impedit. Fuga asperiores error illo ab nam nobis dolorum, quasi, ducimus velit veniam temporibus.</p>
+            	<p>Ad ab culpa, molestias, magni fugiat repellendus fuga asperiores magnam est ut ratione eaque accusamus dolor eos. Mollitia nam corporis expedita velit itaque recusandae alias perferendis praesentium tempore blanditiis perspiciatis, magni sint id placeat facere ad, unde. Cupiditate aperiam ut eum sunt asperiores natus aliquam dolorem quasi impedit, exercitationem, distinctio eveniet dicta, id laboriosam magni aliquid dolores esse consequuntur? Eum ex corrupti voluptatem iste.</p>
+            </div>
+            <div id="page-status" class="hidden-md hidden-lg hidden-sm hidden-xs page-tab">
+            	<h2 class="text-center">Team Status</h2>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+    </div>
+    <div class="overlay"></div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+	<!-- Dashboard -->
+	<script src="assets/vendors/owlCarousel/owl.carousel.min.js"></script>
+	<script src="assets/js/base.dashboard.js"></script>
+	<script src="assets/js/team.js"></script>
+
+</body>
+</html>
