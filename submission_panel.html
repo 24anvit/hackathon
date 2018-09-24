@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Submission</title>
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="assets/css/dashboard.css">
+
+        <!--css for Submission page--> 
+        <link rel="stylesheet" type="text/css" href="assets/css/submission_panel.css">
+
+        <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+        <link rel="stylesheet" href="assets/vendors/owlCarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/vendors/owlCarousel/owl.theme.default.min.css">
+        
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+                <div id="dismiss" class="hidden-lg">
+                    <i class="fa fa-fw fa-arrow-left"></i>
+                </div>
+                <div class="sidebar-header">
+                    <h3>HackCodeX</h3>
+                </div>
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-user-circle"></i> Profile</a>
+                    </li>
+                    <li>
+                        <a href="displayTeam.html"><i class="fa fa-fw fa-users"></i> Team</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-edit"></i> Submission</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-phone"></i> Contact</a>
+                    </li>
+                </ul>
+                <ul class="list-unstyled CTAs">
+                    <li>
+                        <a href="#" class="download">Made with <i class="fa fa-fw fa-heart"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://monkfromearth.github.io" class="article">monkfromearth</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Page Content  -->
+            <div id="content">
+                <ul id="page-nav">
+                    <li id="nav-toggle-btn" class="hidden-lg">
+                        <a href="#"><i class="fa fa-fw fa-bars"></i></a>
+                    </li>
+                    <li class="active" >
+                        <a href="#" id="nav-Evalution" data-target='#Criteria'>
+                            <i class="fa fa-fw fa-angle-double-right"></i><span class="hidden-sm hidden-xs"> Evaluation Criteria</span>
+                        </a>
+                    </li>
+                    <li class="disabled">
+                        <a href="#" id="nav-Submission" data-target='#submit'>
+                            <i class="fa fa-fw fa-align-justify"></i><span class="hidden-sm hidden-xs"> Submission Form</span>
+                        </a>
+                    </li>
+                    <li class="disabled">
+                        <a href="#" id="nav-Status" data-target='#Status'>
+                            <i class="fa fa-fw fa-check"></i><span class="hidden-sm hidden-xs"> Status</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                
+                <br>
+                
+                <div class="container page-tab page-active " id="Criteria" >
+                    <h3 class="text-center">Evalution Criteria</h3>
+                    <label>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptas ex porro, amet sunt blanditiis sit reprehenderit eaque perspiciatis dolor veritatis, rerum officia asperiores, exercitationem accusantium adipisci. Ab libero sed quam aperiam atque, voluptatum quibusdam harum vel asperiores ex dignissimos sunt aliquam quidem, hic fugiat facere dolore inventore numquam nihil alias doloribus necessitatibus in? Itaque consequatur, voluptatibus! Dolor eius, in non sed deserunt aperiam laborum officiis omnis eveniet perspiciatis doloribus a, nostrum ullam obcaecati rem temporibus similique asperiores impedit. Veniam est aperiam exercitationem adipisci, tempora quis quisquam. Earum in minus voluptatibus doloribus qui at quod, consectetur modi sint! Maxime, neque.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere illo aliquam, ratione alias sed enim molestias impedit adipisci! Repellat minima quisquam at! Libero reiciendis ullam tenetur laborum a eius tempora.</label>
+                    <button id="submit-button-criteria"  >Go to Submission</button>
+
+                </div>
+
+                <div class="container page-tab page-active hidden-lg hidden-md hidden-sm hidden-xs text-success "  id="submit">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" style="background: transparent;"><h1 class="text-center">Submission</h1></div>
+                        <div class="panel-body">
+                            
+                                <form action="#" id="sub" >
+                                    
+                                    <div class="row">
+                                        <div class="col-25">
+                                            <label for="teamname">Team Name</label>
+                                        </div>
+                                        <div class="col-75">
+                                            <input type="text" id="teamname" name="teamname" placeholder="Your Team name.." required="required">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-25">
+                                            <label for="Theme">Theme</label>
+                                        </div>
+                                        <div class="col-75">
+                                            <select id="Theme" name="Theme">
+                                                <option value="None" ></option>
+                                                <option value="Education" >Education</option>
+                                                <option value="Environment">Environment</option>
+                                                <option value="Digital Payments And Solutions">Digital Payments And Solutions</option>
+                                                <option value="Woman Safety And Security">Woman Safety And Security</option>
+                                                <option value="Transportation and Mobility">Transportation and Mobility</option>
+                                                <option value="Rulal Development">Rulal Development</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-25">
+                                            <label for="Problem-Statement">Problem Statement</label>
+                                        </div>
+                                        <div class="col-75">
+                                            <textarea id="Problem-Statement" name="Problem Statement" placeholder="Write something.." style="height:150px"
+                                            maxlength="250" required></textarea>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-25">
+                                            <label for="Solution">Solution</label>
+                                        </div>
+                                        <div class="col-75">
+                                            <textarea id="Solution" name="Solution" placeholder="Write something.." style="height:200px" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div id="mysub">
+                                            <button class="mt-5 btn " type="submit" id="submit-button"
+                                            style="width: 50%">Submit </button>
+                                        </div>
+                                    </div>
+                                </form>
+                                    <!--2 panel div ended-->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="container page-tab hidden-lg hidden-md hidden-sm hidden-xs" id="Status">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" style="background: transparent;"><h1 class="text-center">Status</h1></div>
+                        <div class="panel-body">
+                            
+                                <form action="#" id="sub" >
+                                    
+                                    <div class="row">
+                                        <div class="col-25">
+                                            <label for="teamname">Team Name</label>
+                                        </div>
+                                        <div class="col-75 " >
+                                            <label id="show-team-name"></label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-25">
+                                            <label for="Theme">Theme</label>
+                                        </div>
+                                        <div class="col-75">
+                                            <label id="show-theme-name"></label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-25">
+                                            <label for="Problem-Statement">Problem Statement</label>
+                                        </div>
+                                        <div class="col-75">
+                                            <label id="show-problem-statement">
+                                                
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-25">
+                                            <label for="Solution">Solution</label>
+                                        </div>
+                                        <div class="col-75">
+                                            <label id="show-solution">
+                                                
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                </form>
+                                    <!--2 panel div ended-->
+                            </div>
+                        </div>                        
+                        
+                
+                    </div>
+
+                </div> <!--page content close-->
+            
+
+            </div>
+            <div class="overlay"></div>
+            <!-- jQuery CDN - Slim version (=without AJAX) -->
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <!-- Popper.JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+            <!-- Bootstrap JS -->
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+            <!-- jQuery Custom Scroller CDN -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+            <!-- Dashboard -->
+            <script src="assets/vendors/owlCarousel/owl.carousel.min.js"></script>
+            <script src="assets/js/dashboard.js"></script>
+            <script>
+                $(document).ready(function(){
+                    function enableTab(selector){
+                        selector.parent().css('pointer-events', 'initial');
+                        selector.parent().removeClass('disabled');
+                    }
+                    $('#submit-button').click(function(){
+                        enableTab($('#nav-Status'));
+                        $('#nav-Status').click();
+                    });
+                    $('#submit-button-criteria').click(function(){
+                        enableTab($('#nav-Submission'));
+                        
+                        
+                        $('#nav-Submission').click();
+                        
+                        
+                    });
+                    $('#nav-Status').click(function(){
+                    document.getElementById('show-team-name').innerHTML=document.getElementById('teamname').value;
+                    document.getElementById('show-theme-name').innerHTML=document.getElementById('Theme').value;
+                    document.getElementById('show-problem-statement').innerHTML=document.getElementById('Problem-Statement').value;
+                    //document.getElementById('show-solution').innerHTML=document.getElementById('Solution').value;
+                    })
+                });
+                
+            </script>
+        </body>
+    </html>
+
