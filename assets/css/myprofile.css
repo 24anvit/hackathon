@@ -1,0 +1,75 @@
+body{
+    background-color: #6F98D5
+}
+
+ .box{
+    width: 620px;
+    height: 420px;
+    padding:80px;
+    top: 400px;
+    background-color:rgba(236,223,223,0.5);
+    border-radius: 10px;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+ }
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    position: absolute;
+    top:-15%;
+    left:calc(50% - 50px);
+}
+
+
+
+label {
+    padding: 12px 12px 12px 5px;
+    display: inline-block;
+    font-size: 15px;
+
+}
+
+.col-75 label{
+    padding: 12px 12px 2px 5px;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: normal !important;
+
+    border-bottom: 1px solid gray;    
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    padding-left: 20px;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+   .col-25, .col-75,  .box{
+        width: 100%;
+        margin:-6px;
+            
+    }
+    .col-75{
+        padding-left: 0px;
+    }
+
+}
